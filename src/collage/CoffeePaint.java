@@ -11,7 +11,7 @@ import javax.swing.*;
  *
  * @author Adrix (Andrew King)
  */
-public class Collage extends JFrame {
+public class CoffeePaint extends JFrame {
     
     private Canvas canvas;
     private JComboBox shapeBox;
@@ -22,8 +22,8 @@ public class Collage extends JFrame {
     private JButton clearButton;
     private JLabel statusLabel;
     
-    public Collage() {
-        super("Collage");
+    public CoffeePaint() {
+        super("Coffee Paint");
         setLayout(new BorderLayout());
         JPanel controlPanel = new JPanel();
         
@@ -115,7 +115,7 @@ public class Collage extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Collage collage = new Collage();
+        CoffeePaint collage = new CoffeePaint();
         collage.setSize(1000, 800);
         collage.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         collage.setVisible(true);
